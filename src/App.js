@@ -224,7 +224,7 @@ function App() {
                   </Box>
                   <Box>
                     <Heading size='xs' textTransform='uppercase'>
-                      Прибль
+                      Прибыль
                     </Heading>
                     <Text pt='2' fontSize='sm'>
                       {`${(Number(a) * Number(b)) - ((Number(c) * Number(d)) + (Number(c) * Number(e)) + Number(f) + Number(g) + Number(h))}`}
