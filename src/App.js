@@ -59,7 +59,7 @@ function App() {
                   value={a}
                   onChange={handleChangeA}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -77,7 +77,7 @@ function App() {
                   value={b}
                   onChange={handleChangeB}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -95,7 +95,7 @@ function App() {
                   value={c}
                   onChange={handleChangeC}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -113,7 +113,7 @@ function App() {
                   value={d}
                   onChange={handleChangeD}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -131,7 +131,7 @@ function App() {
                   value={e}
                   onChange={handleChangeE}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -149,7 +149,7 @@ function App() {
                   value={f}
                   onChange={handleChangeF}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -167,7 +167,7 @@ function App() {
                   value={g}
                   onChange={handleChangeG}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
@@ -185,14 +185,13 @@ function App() {
                   value={h}
                   onChange={handleChangeH}
                   type='number'
-                  min={'0'} />
+                  min={0} />
                 <NumberInputStepper>
                   <NumberIncrementStepper />
                   <NumberDecrementStepper />
                 </NumberInputStepper>
               </NumberInput>
             </Box>
-
             <Card>
               <CardBody>
                 <Stack divider={<StackDivider />} spacing='4'>
