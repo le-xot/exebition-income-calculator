@@ -1,21 +1,13 @@
 import React from 'react';
 import {
-  ChakraProvider,
   Box,
   Text,
-  Link,
-  VStack,
-  Code,
-  Flex,
   Grid,
   theme,
-  InputGroup,
   Input,
-  InputRightAddon,
-  FormControl,
   FormLabel,
-  FormErrorMessage,
-  FormHelperText,
+  FormControl,
+  ChakraProvider,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import styled from '@emotion/styled'
