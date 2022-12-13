@@ -11,10 +11,7 @@ import {
   Stack,
   StackDivider,
   ChakraProvider,
-  NumberInputField,
-  NumberInputStepper,
-  NumberIncrementStepper,
-  NumberDecrementStepper,
+  NumberInputField
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import styled from '@emotion/styled'
@@ -23,21 +20,21 @@ import styled from '@emotion/styled'
 
 
 function App() {
-  let [a, setA] = React.useState('')
+  const [a, setA] = React.useState(0)
   const handleChangeA = (event) => setA(event.target.value)
-  let [b, setB] = React.useState('')
+  const [b, setB] = React.useState(0)
   const handleChangeB = (event) => setB(event.target.value)
-  let [c, setC] = React.useState('')
+  const [c, setC] = React.useState(0)
   const handleChangeC = (event) => setC(event.target.value)
-  let [d, setD] = React.useState('')
+  const [d, setD] = React.useState(0)
   const handleChangeD = (event) => setD(event.target.value)
-  let [e, setE] = React.useState('')
+  const [e, setE] = React.useState(0)
   const handleChangeE = (event) => setE(event.target.value)
-  let [f, setF] = React.useState('')
+  const [f, setF] = React.useState(0)
   const handleChangeF = (event) => setF(event.target.value)
-  let [g, setG] = React.useState('')
+  const [g, setG] = React.useState(0)
   const handleChangeG = (event) => setG(event.target.value)
-  let [h, setH] = React.useState('')
+  const [h, setH] = React.useState(0)
   const handleChangeH = (event) => setH(event.target.value)
 
 
@@ -60,10 +57,6 @@ function App() {
                   onChange={handleChangeA}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
               </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
@@ -78,10 +71,6 @@ function App() {
                   onChange={handleChangeB}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
               </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
@@ -96,10 +85,6 @@ function App() {
                   onChange={handleChangeC}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
               </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
@@ -114,11 +99,7 @@ function App() {
                   onChange={handleChangeD}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
+                </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
               <Text>Зарплата персоналу (Руб/День)</Text>
@@ -132,11 +113,7 @@ function App() {
                   onChange={handleChangeE}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
+                </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
               <Text>Затраты на оборудование (Руб)</Text>
@@ -150,11 +127,7 @@ function App() {
                   onChange={handleChangeF}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
+                </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
               <Text>Рекламная кампания (Руб)</Text>
@@ -168,11 +141,7 @@ function App() {
                   onChange={handleChangeG}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
+                </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
               <Text>Транспортный расходы (Руб)</Text>
@@ -186,11 +155,7 @@ function App() {
                   onChange={handleChangeH}
                   type='number'
                   min={0} />
-                <NumberInputStepper>
-                  <NumberIncrementStepper />
-                  <NumberDecrementStepper />
-                </NumberInputStepper>
-              </NumberInput>
+                </NumberInput>
             </Box>
             <Card>
               <CardBody>
