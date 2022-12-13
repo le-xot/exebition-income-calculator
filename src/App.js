@@ -1,13 +1,20 @@
 import React from 'react';
 import {
   Box,
+  Card,
+  CardBody,
   Text,
   Grid,
+  Heading,
   theme,
-  Input,
-  FormLabel,
-  FormControl,
+  NumberInput,
+  Stack,
+  StackDivider,
   ChakraProvider,
+  NumberInputField,
+  NumberInputStepper,
+  NumberIncrementStepper,
+  NumberDecrementStepper,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import styled from '@emotion/styled'
@@ -42,103 +49,190 @@ function App() {
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <Box w={"500px"} justifySelf="center" align="center">
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Количество проданных билетов (Шт)</FormLabel>
-                <Input
-                  size={'sm'}
+
+            <Box paddingBottom={'15px'}>
+              <Text>Количество проданных билетов (Шт)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={a}
                   onChange={handleChangeA}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Стоимость билета (Руб)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Стоимость билета (Руб)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={b}
                   onChange={handleChangeB}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Количество дней работы выставки</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Количество дней работы выставки</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={c}
                   onChange={handleChangeC}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Аренда помещений (Руб/день)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Аренда помещений (Руб/день)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={d}
                   onChange={handleChangeD}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Персонал (Кол-во)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Персонал (Кол-во)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={e}
                   onChange={handleChangeE}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Затраты на оборудование (Руб)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Затраты на оборудование (Руб)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={f}
                   onChange={handleChangeF}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Рекламная кампания (Руб)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Рекламная кампания (Руб)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={g}
                   onChange={handleChangeG}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box>
-              <FormControl paddingBottom={'25px'}>
-                <FormLabel>Транспортный расходы (Руб)</FormLabel>
-                <Input
-                  size={'sm'}
+            <Box paddingBottom={'15px'}>
+              <Text>Транспортный расходы (Руб)</Text>
+              <NumberInput
+                size='sm'
+                defaultValue={0}
+                min={0}
+                clampValueOnBlur={false}
+              >
+                <NumberInputField
                   value={h}
                   onChange={handleChangeH}
                   type='number'
-                />
-              </FormControl>
+                  min={'0'} />
+                <NumberInputStepper>
+                  <NumberIncrementStepper />
+                  <NumberDecrementStepper />
+                </NumberInputStepper>
+              </NumberInput>
             </Box>
-            <Box width={"500px"}>
-              <Text >{`Выручка:   ${Number(a) * Number(b)}`}</Text>
-            </Box>
-            <Box width={"500px"}>
-              <Text>{`Расходы:   ${(Number(c) * Number(d)) + (Number(c) * Number(e)) + Number(f) + Number(g) + Number(h)}`}</Text>
-            </Box>
-            <Box width={"500px"}>
-              <Text>{`Прибль:   ${(Number(a) * Number(b)) - ((Number(c) * Number(d)) + (Number(c) * Number(e)) + Number(f) + Number(g) + Number(h))}`}</Text>
-            </Box>
+
+            <Card>
+              <CardBody>
+                <Stack divider={<StackDivider />} spacing='4'>
+                  <Box>
+                    <Heading size='xs' textTransform='uppercase'>
+                      Выручка
+                    </Heading>
+                    <Text pt='2' fontSize='sm'>
+                      {`${Number(a) * Number(b)}`}
+                    </Text>
+                  </Box>
+                  <Box>
+                    <Heading size='xs' textTransform='uppercase'>
+                      Расходы
+                    </Heading>
+                    <Text pt='2' fontSize='sm'>
+                      {`${(Number(c) * Number(d)) + (Number(c) * Number(e)) + Number(f) + Number(g) + Number(h)}`}
+                    </Text>
+                  </Box>
+                  <Box>
+                    <Heading size='xs' textTransform='uppercase'>
+                      Прибль
+                    </Heading>
+                    <Text pt='2' fontSize='sm'>
+                      {`${(Number(a) * Number(b)) - ((Number(c) * Number(d)) + (Number(c) * Number(e)) + Number(f) + Number(g) + Number(h))}`}
+                    </Text>
+                  </Box>
+                </Stack>
+              </CardBody>
+            </Card>
           </Box>
         </Grid>
       </ChakraProvider>
