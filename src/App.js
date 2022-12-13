@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   Box,
   Card,
@@ -23,24 +23,22 @@ import styled from '@emotion/styled'
 
 
 function App() {
-  let [a, setA] = React.useState(0)
+  let [a, setA] = React.useState('')
   const handleChangeA = (event) => setA(event.target.value)
-  let [b, setB] = React.useState(0)
+  let [b, setB] = React.useState('')
   const handleChangeB = (event) => setB(event.target.value)
-  let [c, setC] = React.useState(0)
+  let [c, setC] = React.useState('')
   const handleChangeC = (event) => setC(event.target.value)
-  let [d, setD] = React.useState(0)
+  let [d, setD] = React.useState('')
   const handleChangeD = (event) => setD(event.target.value)
-  let [e, setE] = React.useState(0)
+  let [e, setE] = React.useState('')
   const handleChangeE = (event) => setE(event.target.value)
-  let [f, setF] = React.useState(0)
+  let [f, setF] = React.useState('')
   const handleChangeF = (event) => setF(event.target.value)
-  let [g, setG] = React.useState(0)
+  let [g, setG] = React.useState('')
   const handleChangeG = (event) => setG(event.target.value)
-  let [h, setH] = React.useState(0)
+  let [h, setH] = React.useState('')
   const handleChangeH = (event) => setH(event.target.value)
-
-
 
 
   return (
@@ -54,7 +52,6 @@ function App() {
               <Text>Количество проданных билетов (Шт)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -73,7 +70,6 @@ function App() {
               <Text>Стоимость билета (Руб)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -92,7 +88,6 @@ function App() {
               <Text>Количество дней работы выставки</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -108,10 +103,9 @@ function App() {
               </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
-              <Text>Аренда помещений (Руб/день)</Text>
+              <Text>Аренда помещений (Руб/День)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -127,10 +121,9 @@ function App() {
               </NumberInput>
             </Box>
             <Box paddingBottom={'15px'}>
-              <Text>Персонал (Кол-во)</Text>
+              <Text>Зарплата персоналу (Руб/День)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -149,7 +142,6 @@ function App() {
               <Text>Затраты на оборудование (Руб)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -168,7 +160,6 @@ function App() {
               <Text>Рекламная кампания (Руб)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
@@ -187,7 +178,6 @@ function App() {
               <Text>Транспортный расходы (Руб)</Text>
               <NumberInput
                 size='sm'
-                defaultValue={0}
                 min={0}
                 clampValueOnBlur={false}
               >
