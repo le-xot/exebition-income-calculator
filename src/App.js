@@ -2,13 +2,13 @@ import React from 'react'
 import {
   Box,
   Card,
-  CardBody,
   Text,
   Grid,
-  Heading,
   theme,
-  NumberInput,
   Stack,
+  Heading,
+  CardBody,
+  NumberInput,
   StackDivider,
   ChakraProvider,
   NumberInputField
