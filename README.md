@@ -1,3 +1,3 @@
 ·  Это небольшой одностраничный калькулятор дохода выставки
 
-·  This is small one page exebition income calculator
+·  This is small one page exhibition income calculator
